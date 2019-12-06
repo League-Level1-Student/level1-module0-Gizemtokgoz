@@ -17,12 +17,12 @@ public class Houses {
 	drawHouse(rob, "small", "grey");
 	drawHouse(rob, "medium", "salmon");
 	drawHouse(rob, "medium", "blue");
-	drawHouse(rob, "large", "pink");
+	drawHouse(rob, "large", "white");
 	drawHouse(rob, "small", "purple");
 	drawHouse(rob, "medium", "salmon");
 	drawHouse(rob, "large", "grey");
 	drawHouse(rob, "small", "blue");
-	drawHouse(rob, "small", "pink");
+	drawHouse(rob, "small", "white");
 	}
 	
 	public void drawHouse(Robot bob, int height) {
