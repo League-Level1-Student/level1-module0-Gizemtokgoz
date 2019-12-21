@@ -65,7 +65,7 @@ public class DuelingButtons implements ActionListener {
 		}
 		
 		/* If the buttonPressed was the rightButton, do the opposite. */
-		if (buttonPressed.equals(leftButton)) {
+		if (buttonPressed.equals(rightButton)) {
 			leftButton.setText("No, click me!");
 			leftButton.setPreferredSize(BIG);
 			rightButton.setText("Click Me!");
