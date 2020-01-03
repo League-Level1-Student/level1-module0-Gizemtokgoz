@@ -11,6 +11,7 @@ public class Houses {
 	rob.setX(x);
 	rob.setY(y);
 	rob.setSpeed(50);
+	rob.setPenWidth(5);
 	rob.penDown();
 	
 	drawHouse(rob, "large", "purple");
