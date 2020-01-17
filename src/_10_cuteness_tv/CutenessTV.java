@@ -9,27 +9,27 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class CutenessTV implements ActionListener {
-	public void showButton() {
+	JButton button = new JButton();
+	JButton but = new JButton();
+	JButton buton = new JButton();
+	
+	public void start() {
 		System.out.println("Button clicked");
 		JFrame frame = new JFrame();
 		frame.setVisible(true);
-		JButton button = new JButton();
-		button.setSize(50, 50);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JPanel panel = new JPanel();
-		frame.add(button);
-		frame.pack();
-		button.addActionListener(this);
-		
+		frame.add(panel);
 		button.setSize(50, 50);
 		panel.add(button);
-		
-		JButton but = new JButton();
 		but.setSize(50, 50);
 		panel.add(but);
-		
-		JButton buton = new JButton();
 		buton.setSize(50, 50);
 		panel.add(buton);
+		buton.addActionListener(this);
+		but.addActionListener(this);
+		button.addActionListener(this);
+		frame.pack();
 	}
 	
 	void showDucks() {
@@ -56,6 +56,17 @@ public class CutenessTV implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
+		JButton buttonPressed = (JButton) arg0.getSource();
+		if (buttonPressed == button) {
+			playVideo("showDucks");
+		}
 		
+		if (buttonPressed == but) {
+			playVideo("showFrog");
+		}
+		
+		if (buttonPressed == buton) {
+			playVideo("showFluffyUnicorns");
+		}
 	}
 }

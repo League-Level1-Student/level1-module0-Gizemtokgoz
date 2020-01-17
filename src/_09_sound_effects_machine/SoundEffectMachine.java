@@ -18,6 +18,7 @@ public class SoundEffectMachine implements ActionListener {
 	JButton buttn = new JButton();
 	JButton butto = new JButton();
 	JButton btton = new JButton();
+	
 	public void start() {
 		JFrame frame = new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
