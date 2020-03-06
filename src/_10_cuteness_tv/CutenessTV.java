@@ -58,15 +58,15 @@ public class CutenessTV implements ActionListener {
 		// TODO Auto-generated method stub
 		JButton buttonPressed = (JButton) arg0.getSource();
 		if (buttonPressed == button) {
-			playVideo("showDucks");
+			showDucks();
 		}
 		
 		if (buttonPressed == but) {
-			playVideo("showFrog");
+			 showFrog();
 		}
 		
 		if (buttonPressed == buton) {
-			playVideo("showFluffyUnicorns");
+			showFluffyUnicorns();
 		}
 	}
 }
